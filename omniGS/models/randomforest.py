@@ -1,0 +1,33 @@
+# omniGS/models/randomforest.py
+
+from sklearn.ensemble import RandomForestRegressor
+import joblib
+from .base import BaseModel
+
+
+class RandomForest(BaseModel):
+    """Random Forest regression model wrapper for OmniGS."""
+
+    def __init__(self, **kwargs):
+        
+        super().__init__(**kwargs)
+        self.model = RandomForestRegressor(**kwargs)
+
+    def fit(self, X, y, X_val=None, y_val=None):
+        
+        self.model.fit(X, y)
+        return self
+
+    def predict(self, X):
+        
+        return self.model.predict(X)
+
+    def save(self, path: str):
+        
+        joblib.dump(self.model, path)
+        return self
+
+    def load(self, path: str):
+        
+        self.model = joblib.load(path)
+        return self
