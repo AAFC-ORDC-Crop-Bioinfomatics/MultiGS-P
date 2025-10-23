@@ -17,6 +17,7 @@ It provides a unified framework that seamlessly integrates **classical GS**, **m
 ## Overview
 
 OmniGS-P provides an end-to-end workflow for **Genomic Selection (GS)**, from data preprocessing to model training, evaluation, and prediction.  
+
 It is designed to ensure transparency, reproducibility, and scalability across diverse datasets and computing environments.
 
 The pipeline supports multiple **genomic marker representations** — including SNPs, Haplotypes, and Principal Components — along with a broad suite of **statistical, machine learning, and deep learning algorithms**, making it a complete platform for both **cross-validation** and **independent prediction** workflows.
@@ -77,7 +78,7 @@ python -m omniGS.main --config config.ini
 ## Citation
 
 If you use **OmniGS-P** in your research, please cite it as follows:
-> *Frank M. You¹, Chunfang Zheng¹, Sylvie Cloutier¹, Pingchuan Li¹, John Joseph Zagariah Daniel¹, Kenneth Jackle², Megan House², Bunyamin Tar’an² (2025)  OmniGS-P: A Comprehensive Genomic Selection Pipeline Using Python.*  
+> *Frank M. You¹, Chunfang Zheng¹, Sylvie Cloutier¹, Pingchuan Li¹, John Joseph Zagariah Daniel¹, Kenneth Jackle², Megan House², Bunyamin Tar’an² (2025)  OmniGS-P: A Modular Genomic Selection Pipeline Using Python.*  
 
 ## Documentation
 
