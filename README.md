@@ -16,11 +16,7 @@ It provides a unified framework that seamlessly integrates **classical GS**, **m
 
 ## Overview
 
-OmniGS-P provides an end-to-end workflow for **Genomic Selection (GS)**, from data preprocessing to model training, evaluation, and prediction.  
-
-It is designed to ensure transparency, reproducibility, and scalability across diverse datasets and computing environments.
-
-The pipeline supports multiple **genomic marker representations** — including SNPs, Haplotypes, and Principal Components — along with a broad suite of **statistical, machine learning, and deep learning algorithms**, making it a complete platform for both **cross-validation** and **independent prediction** workflows.
+OmniGS-P provides an end-to-end workflow for **Genomic Selection (GS)**, from data preprocessing to model training, evaluation, and prediction. The pipeline streamlines all stages of the genomic selection process, enabling **reproducible** and **scalable** genomic prediction across diverse datasets and environments. The pipeline supports multiple **genomic marker representations** — including SNPs, Haplotypes, and Principal Components — along with a broad suite of **statistical, machine learning, and deep learning algorithms**, making it a complete platform for both **cross-validation** and **prediction** workflows.
 
 ## Installation
 
