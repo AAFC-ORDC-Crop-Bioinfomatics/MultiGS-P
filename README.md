@@ -11,12 +11,12 @@ It provides a unified framework that seamlessly integrates **classical GS**, **m
 - [Configuration](#configuration)
 - [Usage](#usage)
 - [Citation](#citation)
-- [Documentation](#documentation)
+- [Tutorials](#tutorials)
 - [License](#license)
 
 ## Overview
 
-OmniGS-P provides an end-to-end workflow for **Genomic Selection (GS)**, from data preprocessing to model training, evaluation, and prediction. The pipeline streamlines all stages of the genomic selection process, enabling **reproducible** and **scalable** genomic prediction across diverse datasets and environments. The pipeline supports multiple **genomic marker representations** — including SNPs, Haplotypes, and Principal Components — along with a broad suite of **statistical, machine learning, and deep learning algorithms**, making it a complete platform for both **cross-validation** and **prediction** workflows.
+OmniGS-P provides an end-to-end workflow for **Genomic Selection (GS)**, from data preprocessing to model training, evaluation, and prediction. The pipeline streamlines all stages of the genomic selection process, enabling **reproducible** and **scalable** genomic prediction across diverse datasets and environments. The pipeline supports multiple **genomic marker representations** including SNPs, Haplotypes, and Principal Components along with a broad suite of **statistical, machine learning, and deep learning algorithms**, making it a complete platform for both **cross-validation** and **prediction** workflows.
 
 ## Installation
 
@@ -68,15 +68,15 @@ Once the configuration file (`config.ini`) is prepared, the pipeline can be exec
 ### Run the Pipeline
 
 ```bash
-python -m omniGS.main --config config.ini
+python -m omniGS_P.main --config config.ini
 ```
 
 ## Citation
 
 If you use **OmniGS-P** in your research, please cite it as follows:
-> *Frank M. You¹, Chunfang Zheng¹, Sylvie Cloutier¹, Pingchuan Li¹, John Joseph Zagariah Daniel¹, Kenneth Jackle², Megan House², Bunyamin Tar’an² (2025)  OmniGS-P: A Modular Genomic Selection Pipeline Using Python.*  
+> *Frank M. You¹, Chunfang Zheng¹, John Joseph Zagariah Daniel¹, Pingchuan Li¹, Sylvie Cloutier¹, Kenneth Jackle², Megan House², Bunyamin Tar’an² (2025)  OmniGS-P: A Modular Genomic Selection Pipeline Using Python.*  
 
-## Documentation
+## Tutorials
 
 Comprehensive instructions for configuration, data preparation, model training, and execution are provided in the **OmniGS-P User Guide (PDF)**.
 
