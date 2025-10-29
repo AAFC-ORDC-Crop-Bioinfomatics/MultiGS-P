@@ -1,9 +1,9 @@
-# omniGS_P/models/bayesa.py
+# multiGS_P/models/bayesa.py
 from .base import BaseModel
 
 
 class BayesA(BaseModel):
-    """BayesA model wrapper for omniGS_P."""
+    """BayesA model wrapper for multiGS_P."""
 
     def __init__(self, **kwargs):
         

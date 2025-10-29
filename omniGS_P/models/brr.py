@@ -1,4 +1,4 @@
-# omniGS_P/models/brr.py
+# multiGS_P/models/brr.py
 
 from sklearn.linear_model import BayesianRidge
 import joblib

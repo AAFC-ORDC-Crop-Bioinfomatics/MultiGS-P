@@ -1,4 +1,4 @@
-# omniGS_P/models/mlp_sklearn.py
+# multiGS_P/models/mlp_sklearn.py
 
 from sklearn.neural_network import MLPRegressor
 import joblib
@@ -7,7 +7,7 @@ from .base import BaseModel
 
 class MLP_SKLEARN(BaseModel):
     """
-    scikit-learn MLPRegressor wrapped for omniGS_P.
+    scikit-learn MLPRegressor wrapped for multiGS_P.
     """
 
     def __init__(self, **kwargs):

@@ -1,4 +1,4 @@
-# omniGS_P/models/lasso.py
+# multiGS_P/models/lasso.py
 
 from sklearn.linear_model import Lasso as SkLasso
 import joblib
@@ -6,7 +6,7 @@ from .base import BaseModel
 
 
 class LASSO(BaseModel):
-    """LASSO regression model wrapper for omniGS_P."""
+    """LASSO regression model wrapper for multiGS_P."""
 
     def __init__(self, **kwargs):
         

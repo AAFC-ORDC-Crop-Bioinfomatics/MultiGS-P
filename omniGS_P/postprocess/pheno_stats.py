@@ -1,4 +1,4 @@
-# omniGS_P/postprocess/pheno_stats.py
+# multiGS_P/postprocess/pheno_stats.py
 import os
 import pandas as pd
 import matplotlib.pyplot as plt

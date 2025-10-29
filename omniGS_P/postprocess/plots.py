@@ -1,4 +1,4 @@
-# omniGS_P/postprocess/plots.py
+# multiGS_P/postprocess/plots.py
 
 import os
 import glob

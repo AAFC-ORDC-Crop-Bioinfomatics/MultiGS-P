@@ -1,4 +1,4 @@
-# omniGS_P/preprocess/qc.py
+# multiGS_P/preprocess/qc.py
 
 import numpy as np
 import logging

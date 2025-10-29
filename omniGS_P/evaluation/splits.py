@@ -1,7 +1,7 @@
-# omniGS_P/evaluation/splits.py
+# multiGS_P/evaluation/splits.py
 import numpy as np
 from sklearn.model_selection import KFold
-from omniGS_P.utils.io import write_json
+from multiGS_P.utils.io import write_json
 import logging
 
 

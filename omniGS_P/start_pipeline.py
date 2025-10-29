@@ -1,27 +1,27 @@
-# omniGS_P/start_pipeline.py
+# multiGS_P/start_pipeline.py
 
 import logging
 import os
 import time
 import sys
 from datetime import timedelta
-from omniGS_P.cli import parse_cli
-from omniGS_P.config.parser import parse_config
-from omniGS_P.utils.logging import setup_logging
+from multiGS_P.cli import parse_cli
+from multiGS_P.config.parser import parse_config
+from multiGS_P.utils.logging import setup_logging
 from multiprocessing import Process
 
 # Runner modules
-from omniGS_P.runner.cv import run_trait_cv
-from omniGS_P.runner.prediction import run_trait_prediction
+from multiGS_P.runner.cv import run_trait_cv
+from multiGS_P.runner.prediction import run_trait_prediction
 
 # Postprocess modules
-from omniGS_P.postprocess.reports import run_postprocess, run_prediction_postprocess
-from omniGS_P.postprocess.stats import run_stats
-from omniGS_P.postprocess.pheno_stats import run_pheno_analysis, run_prediction_pheno_analysis
-from omniGS_P.postprocess.plots import run_plots, run_prediction_plots, run_prediction_mds_plot
+from multiGS_P.postprocess.reports import run_postprocess, run_prediction_postprocess
+from multiGS_P.postprocess.stats import run_stats
+from multiGS_P.postprocess.pheno_stats import run_pheno_analysis, run_prediction_pheno_analysis
+from multiGS_P.postprocess.plots import run_plots, run_prediction_plots, run_prediction_mds_plot
 
 # Preprocess modules
-from omniGS_P.preprocess.pipeline import run_preprocessing_cv, run_preprocessing_prediction
+from multiGS_P.preprocess.pipeline import run_preprocessing_cv, run_preprocessing_prediction
 
 import warnings
 warnings.filterwarnings("ignore")
@@ -29,7 +29,7 @@ warnings.filterwarnings("ignore")
 
 def start_pipeline(config_path: str = None, args=None):
     """
-    Launch the omniGS_P pipeline for Cross-Validation or Prediction modes.
+    Launch the multiGS_P pipeline for Cross-Validation or Prediction modes.
 
     Args:
         config_path (str): Path to the configuration file (.ini).
@@ -62,7 +62,7 @@ def start_pipeline(config_path: str = None, args=None):
 
     # --- Step 3: Display run summary ---
     logging.info("=" * 60)
-    logging.info("omniGS_P Pipeline – Run")
+    logging.info("multiGS_P Pipeline – Run")
     logging.info("=" * 60)
     logging.info(f"Config file: {config_file}")
     logging.info(f"Logging to: {log_path}")
@@ -105,7 +105,7 @@ def start_pipeline(config_path: str = None, args=None):
         )
 
         # Output directories
-        splits_dir = os.path.join(geno_dir, "omniGS_P-splits")
+        splits_dir = os.path.join(geno_dir, "multiGS_P-splits")
         results_dir = config["general"]["results_dir"]
         logs_dir = os.path.join(results_dir, "cross_validation_results", geno_base, "logs")
 

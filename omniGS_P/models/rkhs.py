@@ -1,4 +1,4 @@
-# omniGS_P/models/rkhs.py
+# multiGS_P/models/rkhs.py
 
 from sklearn.kernel_ridge import KernelRidge
 import joblib
@@ -6,7 +6,7 @@ from .base import BaseModel
 
 
 class RKHS(BaseModel):
-    """RKHS regression model wrapper for omniGS_P using kernel ridge regression."""
+    """RKHS regression model wrapper for multiGS_P using kernel ridge regression."""
 
     def __init__(self, **kwargs):
         

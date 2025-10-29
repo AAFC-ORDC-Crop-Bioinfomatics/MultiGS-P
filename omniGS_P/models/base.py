@@ -1,8 +1,8 @@
-# omniGS_P/models/base.py
+# multiGS_P/models/base.py
 from abc import ABC, abstractmethod
 
 class BaseModel(ABC):
-    """Abstract base class for all omniGS_P models."""
+    """Abstract base class for all multiGS_P models."""
 
     def __init__(self, **kwargs):
         self.params = kwargs

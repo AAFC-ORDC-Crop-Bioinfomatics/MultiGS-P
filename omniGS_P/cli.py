@@ -1,12 +1,12 @@
-# omniGS_P/cli.py
+# multiGS_P/cli.py
 import argparse
 
 def parse_cli():
     """
-    Parse command-line arguments for omniGS_P pipeline.
+    Parse command-line arguments for multiGS_P pipeline.
     """
     parser = argparse.ArgumentParser(
-        description="omniGS_P: Genomic Selection Pipeline"
+        description="multiGS_P: Genomic Selection Pipeline"
     )
     parser.add_argument(
         "-c", "--config",

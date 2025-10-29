@@ -1,10 +1,10 @@
-# omniGS_P/models/bayesr.py
+# multiGS_P/models/bayesr.py
 
 from .base import BaseModel
 
 
 class BayesR(BaseModel):
-    """BayesR model wrapper for omniGS_P."""
+    """BayesR model wrapper for multiGS_P."""
 
     def __init__(self, **kwargs):
         

@@ -1,4 +1,4 @@
-# omniGS_P/models/registry.py
+# multiGS_P/models/registry.py
 
 from .brr import BRR
 from .svr_rbf import SVR_RBF   

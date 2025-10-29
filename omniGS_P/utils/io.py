@@ -1,4 +1,4 @@
-# omniGS_P/utils/io.py
+# multiGS_P/utils/io.py
 import os
 import json
 import pandas as pd

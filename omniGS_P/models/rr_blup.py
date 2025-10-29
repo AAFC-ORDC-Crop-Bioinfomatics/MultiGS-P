@@ -1,4 +1,4 @@
-# omniGS_P/models/rr_blup.py
+# multiGS_P/models/rr_blup.py
 
 from sklearn.linear_model import Ridge
 import joblib
@@ -6,7 +6,7 @@ from .base import BaseModel
 
 
 class RR_BLUP(BaseModel):
-    """RR-BLUP model wrapper for omniGS_P using Ridge regression."""
+    """RR-BLUP model wrapper for multiGS_P using Ridge regression."""
 
     def __init__(self, **kwargs):
         

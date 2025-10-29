@@ -1,4 +1,4 @@
-# omniGS_P/models/krr_linear.py
+# multiGS_P/models/krr_linear.py
 
 from sklearn.kernel_ridge import KernelRidge
 import joblib
@@ -6,7 +6,7 @@ from .base import BaseModel
 
 
 class KRR_LINEAR(BaseModel):
-    """Kernel Ridge Regression with Linear kernel wrapper for omniGS_P."""
+    """Kernel Ridge Regression with Linear kernel wrapper for multiGS_P."""
 
     def __init__(self, **kwargs):
         

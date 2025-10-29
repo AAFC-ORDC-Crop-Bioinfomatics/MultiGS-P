@@ -1,4 +1,4 @@
-# omniGS_P/models/xgboost.py
+# multiGS_P/models/xgboost.py
 
 from xgboost import XGBRegressor
 import joblib
@@ -6,7 +6,7 @@ from .base import BaseModel
 
 
 class XGBOOST(BaseModel):
-    """XGBoost regression model wrapper for omniGS_P."""
+    """XGBoost regression model wrapper for multiGS_P."""
 
     def __init__(self, **kwargs):
         

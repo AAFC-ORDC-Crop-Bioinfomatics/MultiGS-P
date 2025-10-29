@@ -1,4 +1,4 @@
-# omniGS_P/models/gblup.py
+# multiGS_P/models/gblup.py
 
 import numpy as np
 from sklearn.linear_model import Ridge
@@ -7,7 +7,7 @@ from .base import BaseModel
 
 
 class GBLUP(BaseModel):
-    """GBLUP model wrapper for omniGS_P."""
+    """GBLUP model wrapper for multiGS_P."""
 
     def __init__(self, **kwargs):
         

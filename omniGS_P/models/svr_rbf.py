@@ -1,4 +1,4 @@
-# omniGS_P/models/svr_rbf.py
+# multiGS_P/models/svr_rbf.py
 
 from sklearn.svm import SVR
 import joblib
@@ -6,7 +6,7 @@ from .base import BaseModel
 
 
 class SVR_RBF(BaseModel):
-    """Support Vector Regression with RBF kernel wrapper for omniGS_P"""
+    """Support Vector Regression with RBF kernel wrapper for multiGS_P"""
 
     def __init__(self, **kwargs):
         

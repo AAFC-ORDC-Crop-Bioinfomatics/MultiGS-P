@@ -1,4 +1,4 @@
-# omniGS_P/preprocess/representations/snp.py
+# multiGS_P/preprocess/representations/snp.py
 
 import numpy as np
 

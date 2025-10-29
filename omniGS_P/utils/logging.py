@@ -1,4 +1,4 @@
-# omniGS_P/utils/logging.py
+# multiGS_P/utils/logging.py
 import logging, os
 from datetime import datetime
 

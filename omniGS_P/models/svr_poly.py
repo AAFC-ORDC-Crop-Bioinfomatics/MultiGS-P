@@ -1,4 +1,4 @@
-# omniGS/models/svr_poly.py
+# multiGS_P/models/svr_poly.py
 
 from sklearn.svm import SVR
 import joblib
@@ -6,7 +6,7 @@ from .base import BaseModel
 
 
 class SVR_POLY(BaseModel):
-    """Support Vector Regression with Polynomial kernel wrapper for omniGS."""
+    """Support Vector Regression with Polynomial kernel wrapper for multiGS_P."""
 
     def __init__(self, **kwargs):
         

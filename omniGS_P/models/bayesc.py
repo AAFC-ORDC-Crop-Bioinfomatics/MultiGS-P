@@ -1,10 +1,10 @@
-# omniGS_P/models/bayesc.py
+# multiGS_P/models/bayesc.py
 
 from .base import BaseModel
 
 
 class BayesC(BaseModel):
-    """BayesC model wrapper for omniGS_P."""
+    """BayesC model wrapper for multiGS_P."""
 
     def __init__(self, **kwargs):
         

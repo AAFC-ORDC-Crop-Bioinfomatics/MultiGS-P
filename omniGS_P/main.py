@@ -1,11 +1,11 @@
-# omniGS_P/main.py
+# multiGS_P/main.py
 
-from omniGS_P.start_pipeline import start_pipeline
-from omniGS_P.cli import parse_cli
+from multiGS_P.start_pipeline import start_pipeline
+from multiGS_P.cli import parse_cli
 
 def main():
     """
-    Entry point for running omniGS_P-P via `python -m omniGS_P.main --config config.ini`.
+    Entry point for running multiGS_P-P via `python -m multiGS_P.main --config config.ini`.
     """
     args = parse_cli()
     start_pipeline(config_path=args.config)

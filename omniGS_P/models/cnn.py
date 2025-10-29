@@ -1,4 +1,4 @@
-# omniGS_P/models/cnn.py
+# multiGS_P/models/cnn.py
 
 import torch
 import torch.nn as nn
@@ -9,7 +9,7 @@ from .base import BaseModel
 
 
 class CNN(BaseModel):
-    """PyTorch-based 1D CNN model for genomic prediction in omniGS_P."""
+    """PyTorch-based 1D CNN model for genomic prediction in multiGS_P."""
 
     def __init__(self, input_dim=None, output_dim=1, **kwargs):
         super().__init__(**kwargs)

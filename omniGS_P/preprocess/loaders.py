@@ -1,4 +1,4 @@
-# omniGS_P/preprocess/loaders.py
+# multiGS_P/preprocess/loaders.py
 import os
 import pandas as pd
 import allel

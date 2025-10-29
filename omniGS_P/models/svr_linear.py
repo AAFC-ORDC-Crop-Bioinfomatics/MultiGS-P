@@ -1,4 +1,4 @@
-# omniGS_P/models/svr_linear.py
+# multiGS_P/models/svr_linear.py
 
 from sklearn.svm import SVR
 import joblib
@@ -6,7 +6,7 @@ from .base import BaseModel
 
 
 class SVR_LINEAR(BaseModel):
-    """Support Vector Regression with Linear kernel wrapper for omniGS_P."""
+    """Support Vector Regression with Linear kernel wrapper for multiGS_P."""
 
     def __init__(self, **kwargs):
         

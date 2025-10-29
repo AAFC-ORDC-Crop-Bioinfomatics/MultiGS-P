@@ -1,4 +1,4 @@
-# omniGS_P/models/elasticnet.py
+# multiGS_P/models/elasticnet.py
 
 from sklearn.linear_model import ElasticNet as SkElasticNet
 import joblib

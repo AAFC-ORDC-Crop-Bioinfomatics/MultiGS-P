@@ -1,12 +1,12 @@
-# omniGS_P/runner/prediction.py
+# multiGS_P/runner/prediction.py
 import os
 import logging
 import numpy as np
 import pandas as pd
 import time
 from datetime import timedelta
-from omniGS_P.models.registry import get_model_class
-from omniGS_P.evaluation.metrics import evaluate
+from multiGS_P.models.registry import get_model_class
+from multiGS_P.evaluation.metrics import evaluate
 
 root_logger = logging.getLogger(__name__)
 

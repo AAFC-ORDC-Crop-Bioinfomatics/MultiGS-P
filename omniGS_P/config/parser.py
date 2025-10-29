@@ -1,4 +1,4 @@
-# omniGS_P/config/parser.py
+# multiGS_P/config/parser.py
 
 import configparser
 import os
@@ -37,7 +37,7 @@ def try_cast(value):
 
 def parse_config(path):
     """
-    Parse an omniGS_P configuration (.ini) file into a structured dictionary.
+    Parse an multiGS_P configuration (.ini) file into a structured dictionary.
     """
     if not os.path.exists(path):
         raise FileNotFoundError(f"Config file not found: {path}")

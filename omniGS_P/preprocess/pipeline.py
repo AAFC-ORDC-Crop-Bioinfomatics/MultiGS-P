@@ -1,15 +1,15 @@
-# omniGS_P/preprocess/pipeline.py
+# multiGS_P/preprocess/pipeline.py
 
 import os
 import pandas as pd
 import logging
-from omniGS_P.utils.io import read_hdf5, write_hdf5
-from omniGS_P.preprocess.loaders import load_vcf, load_pheno
-from omniGS_P.preprocess.processors import filter_snps, align_geno_pheno, impute_missing, normalize
-from omniGS_P.preprocess.processors import intersect_and_order_snps, impute_and_fit_transform, impute_transform, normalize_and_fit_transform, normalize_transform, qc_filter_fit_transform
-from omniGS_P.preprocess.representations.snp import snp_features
-from omniGS_P.preprocess.representations.pca import pca_features, plot_pca_variance, pca_features_prediction
-from omniGS_P.preprocess.representations.haplotype import haplotype_features, haplotype_features_prediction
+from multiGS_P.utils.io import read_hdf5, write_hdf5
+from multiGS_P.preprocess.loaders import load_vcf, load_pheno
+from multiGS_P.preprocess.processors import filter_snps, align_geno_pheno, impute_missing, normalize
+from multiGS_P.preprocess.processors import intersect_and_order_snps, impute_and_fit_transform, impute_transform, normalize_and_fit_transform, normalize_transform, qc_filter_fit_transform
+from multiGS_P.preprocess.representations.snp import snp_features
+from multiGS_P.preprocess.representations.pca import pca_features, plot_pca_variance, pca_features_prediction
+from multiGS_P.preprocess.representations.haplotype import haplotype_features, haplotype_features_prediction
 
 
 logger = logging.getLogger(__name__)

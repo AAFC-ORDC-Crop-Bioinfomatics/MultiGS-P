@@ -1,4 +1,4 @@
-# omniGS_P/models/lightgbm.py
+# multiGS_P/models/lightgbm.py
 
 from lightgbm import LGBMRegressor
 import joblib
@@ -6,7 +6,7 @@ from .base import BaseModel
 import numpy as np
 
 class LIGHTGBM(BaseModel):
-    """LightGBM regression model wrapper for omniGS_P."""
+    """LightGBM regression model wrapper for multiGS_P."""
 
     def __init__(self, **kwargs):
         

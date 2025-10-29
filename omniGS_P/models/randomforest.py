@@ -1,4 +1,4 @@
-# omniGS_P/models/randomforest.py
+# multiGS_P/models/randomforest.py
 
 from sklearn.ensemble import RandomForestRegressor
 import joblib
@@ -6,7 +6,7 @@ from .base import BaseModel
 
 
 class RandomForest(BaseModel):
-    """Random Forest regression model wrapper for omniGS_P."""
+    """Random Forest regression model wrapper for multiGS_P."""
 
     def __init__(self, **kwargs):
         

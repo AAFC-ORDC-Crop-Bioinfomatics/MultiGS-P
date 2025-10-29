@@ -1,4 +1,4 @@
-# omniGS_P/models/stacking.py
+# multiGS_P/models/stacking.py
 import os
 import joblib
 import numpy as np
@@ -11,7 +11,7 @@ from .base import BaseModel
 
 class STACKING(BaseModel):
     """
-    omniGS_P Stacking Ensemble.
+    multiGS_P Stacking Ensemble.
     """
 
     def __init__(self, base_models=None, meta_model=None, cv=5, logger=None, **kwargs):

@@ -1,4 +1,4 @@
-# omniGS_P/preprocess/processors.py
+# multiGS_P/preprocess/processors.py
 
 import numpy as np
 import pandas as pd

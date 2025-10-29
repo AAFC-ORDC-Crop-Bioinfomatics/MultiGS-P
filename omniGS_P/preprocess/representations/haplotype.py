@@ -1,12 +1,12 @@
-# omniGS_P/preprocess/representations/haplotype.py
+# multiGS_P/preprocess/representations/haplotype.py
 
 import os
 import subprocess
 import logging
 import numpy as np
 import pandas as pd
-from omniGS_P.preprocess.loaders import load_vcf
-from omniGS_P.preprocess.processors import intersect_and_order_snps
+from multiGS_P.preprocess.loaders import load_vcf
+from multiGS_P.preprocess.processors import intersect_and_order_snps
 
 logger = logging.getLogger(__name__)
 
