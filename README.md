@@ -74,6 +74,10 @@ conda activate multigs_p
 # Update the full path
 export PYTHONPATH=<path>/multiGS_P:$PYTHONPATH
 ```
+### 4. Installing *rtm-gwas-snpldb* tool
+The rtm-gwas-snpldb tool for haplotype block identification is included in the MultiGs-R package. The latest executable can also be downloaded separately from:
+https://github.com/njau-sri/rtm-gwas
+
 # Configuration
 
 All pipeline settings are defined in a single `.ini` configuration file. 
