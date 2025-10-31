@@ -6,6 +6,7 @@
 
 ## Table of Contents
 - [Overview](#overview)
+- [Key Features](#Key Features)
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Usage](#usage)
@@ -20,10 +21,10 @@
 ## Key Features
 - **Multiple Feature Views:** SNP markers (SNP), haplotype blocks (HAP), and principal components (PC)
 - **Diverse Model Support:**
-o	**Machine learning:** Random Forest, XGBoost, LightGBM
-o	**Deep learning:** CNN, MLP
-o	**Statistical models:** ElasticNet, LASSO, Bayesian Ridge Regression (BRR)
-o	**Ensemble:** Stacking
+--	**Machine learning:** Random Forest, XGBoost, LightGBM
+--	**Deep learning:** CNN, MLP
+--	**Statistical models:** ElasticNet, LASSO, Bayesian Ridge Regression (BRR)
+--	**Ensemble:** Stacking
 - **Flexible Marker Types:** Cross-validation (CV) and across-population prediction (APP) modes
 - **Comprehensive Analysis:** Phenotype analysis, visualization, and statistical reporting
 
@@ -205,17 +206,17 @@ Once the configuration file (`config.ini`) is prepared, the pipeline can be exec
 ### Run the Pipeline
 
 ```bash
-python -m multiGS_P.main --config config.ini
+python MultiGS-P_1.0.pyc --config config.ini
 ```
 
 ## Citation
 
-If you use **multiGS_P** in your research, please cite it as follows:
-> *Frank M. You¹, Chunfang Zheng¹, John Joseph Zagariah Daniel¹, Pingchuan Li¹, Sylvie Cloutier¹, Kenneth Jackle², Megan House², Bunyamin Tar’an² (2025)  multiGS_P: A Modular Genomic Selection Pipeline Using Python.*  
+If you use **MultiGS-P** in your research, please cite it as follows:
+> *You FM, Zheng C, Zagariah Daniel JJ, Li P, Jackle K,  House M, Tar’an T, Cloutier S. Genomic selection for seed yield prediction achieved through versatile pipelines for breeding efficiency in Flax. (In preparation).*  
 
 ## Tutorials
 
-Comprehensive instructions for configuration, data preparation, model training, and execution are provided in the **multiGS_P User Guide (PDF)**.
+Comprehensive instructions for configuration, data preparation, model training, and execution are provided in the **MultiGS-P User Guide (PDF)**.
 
 The guide will be available in the repository’s `docs/` directory.
 
