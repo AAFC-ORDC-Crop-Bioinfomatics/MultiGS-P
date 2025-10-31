@@ -278,7 +278,7 @@ Each model supports extensive hyperparameter tuning through the configuration fi
 Once the configuration file (`config.ini`) is prepared, the pipeline can be executed directly as a Python module.
 
 ### Run the Pipeline
-You need to first activate the Conda environment that contains all the required libraries.
+You need to first activate the Conda environment (multigs_p, previously created in installation) that contains all the required libraries.
 
 ```bash
 conda activate multigs_p
