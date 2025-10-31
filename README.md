@@ -1,9 +1,8 @@
-# multiGS_P
+# MultiGS-P
 
-## A Modular Genomic Selection Pipeline Using Python
+## A Genomic Selection Pipeline for Multiple Single Traits Using Diverse Machine Learning and Deep Learning Models and Marker Types
 
-**multiGS_P** is a modular and configurable **Genomic Selection (GS)** pipeline designed for plant breeding research.  
-It provides a unified framework that seamlessly integrates **classical GS**, **machine learning (ML)**, and **deep learning (DL)** models, enabling comprehensive and reproducible genomic prediction for plant breeding programs.
+**MultiGS_P** is a comprehensive Python-based genomic selection pipeline for multiple single traits. It integrates **machine learning**, **deep learning**, and **classical statistical models** for genomic prediction. The pipeline supports multiple feature types—including SNPs, haplotypes, and principal components—and provides both **cross-validation (CV)** and **across-population prediction (APP)** modes, enabling robust genomic selection analyses and practical applications in breeding programs..
 
 ## Table of Contents
 - [Overview](#overview)
@@ -16,7 +15,17 @@ It provides a unified framework that seamlessly integrates **classical GS**, **m
 
 ## Overview
 
-multiGS_P provides an end-to-end workflow for **Genomic Selection (GS)**, from data preprocessing to model training, evaluation, and prediction. The pipeline streamlines all stages of the genomic selection process, enabling **reproducible** and **scalable** genomic prediction across diverse datasets and environments. The pipeline supports multiple **genomic marker representations** including SNPs, Haplotypes, and Principal Components along with a broad suite of **statistical, machine learning, and deep learning algorithms**, making it a complete platform for both **cross-validation** and **prediction** workflows.
+**MultiGS-P** provides an end-to-end workflow for **Genomic Selection (GS)**, from data preprocessing to model training, evaluation, and prediction. The pipeline streamlines all stages of the genomic selection process, enabling **reproducible** and **scalable** genomic prediction across diverse datasets and environments. The pipeline supports multiple **genomic marker representations** including SNPs, Haplotypes, and Principal Components along with a broad suite of **statistical, machine learning, and deep learning algorithms**, making it a complete platform for both **cross-validation** and **across-population prediction** workflows.
+
+## Key Features
+- Multiple Feature Views: SNP markers (SNP), haplotype blocks (HAP), and principal components (PC)
+- Diverse Model Support:
+o	Machine learning: Random Forest, XGBoost, LightGBM
+o	Deep learning: CNN, MLP
+o	Statistical models: ElasticNet, LASSO, Bayesian Ridge Regression (BRR)
+o	Ensemble: Stacking
+- Flexible Marker Types: Cross-validation (CV) and across-population prediction (APP) modes
+- Comprehensive Analysis: Phenotype analysis, visualization, and statistical reporting
 
 ## Installation
 
