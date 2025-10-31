@@ -6,29 +6,58 @@
 
 ## Table of Contents
 - [Overview](#overview)
-- [Key Features](#Key Features)
+- [Key Features](#key-features)
 - [Installation](#installation)
 - [Configuration](#configuration)
+- [Input Files](#input-files)
+- [Advanced Configuration](#advanced-configuration)
 - [Usage](#usage)
+- [Troubleshooting](#troubleshooting)
+- [Logging](#logging)
 - [Citation](#citation)
 - [Tutorials](#tutorials)
 - [License](#license)
 
-## Overview
+# Overview
 
 **MultiGS-P** provides an end-to-end workflow for **Genomic Selection (GS)**, from data preprocessing to model training, evaluation, and prediction. The pipeline streamlines all stages of the genomic selection process, enabling **reproducible** and **scalable** genomic prediction across diverse datasets and environments. The pipeline supports multiple **genomic marker representations** including SNPs, Haplotypes, and Principal Components along with a broad suite of **statistical, machine learning, and deep learning algorithms**, making it a complete platform for both **cross-validation** and **across-population prediction** workflows.
 
-## Key Features
-- **Multiple Feature Views:** SNP markers (SNP), haplotype blocks (HAP), and principal components (PC)
-- **Diverse Model Support:**
---	**Machine learning:** Random Forest, XGBoost, LightGBM
---	**Deep learning:** CNN, MLP
---	**Statistical models:** ElasticNet, LASSO, Bayesian Ridge Regression (BRR)
---	**Ensemble:** Stacking
-- **Flexible Marker Types:** Cross-validation (CV) and across-population prediction (APP) modes
-- **Comprehensive Analysis:** Phenotype analysis, visualization, and statistical reporting
+# Key Features
+### Multiple marker types (Feature Views):
+- **SNP marker (SNP)**
+  - Raw SNP markers (0,1,2 encoding)
+  - Direct use of individual SNP effects
+- **Haplotype View (HAP)**
+  - Constructed using RTM-GWAS SNPLDB tool
+  -	Captures linkage disequilibrium patterns
+  -	Reduces dimensionality while preserving genetic information
+- **Principal Components (PC)**
+  - Dimensionality reduction via PCA
+  -	Configurable variance threshold for component selection
+  -	Efficient representation of genetic structure
+### Diverse Model Support:
+  -	**Machine learning:** 
+    - Random Forest (RFR): Ensemble of decision trees
+    - XGBoost: Gradient boosting implementation
+    - LightGBM: Light gradient boosting machine
+  -	**Deep learning:** 
+ 	- CNN: Convolutional Neural Network for spatial patterns
+    - MLP: Multi-Layer Perceptron with advanced features 
+  -	**Statistical models:** 
+    - **ElasticNet:** Linear model with L1 and L2 regularization
+	- **LASSO:** L1-regularized linear model
+	- **BRR:** Bayesian Ridge Regression
 
-## Installation
+  -	**Ensemble:** 
+   	- Stacking: Meta-ensemble combining multiple base models
+	- Any models implemented in this pipeline can be stacked.
+
+### Comprehensive Analysis:
+ - Phenotype analysis, 
+ - visualization, and 
+ - statistical reporting
+
+# Installation
 
 ### 1. Clone the Repository
 ```bash
@@ -45,11 +74,11 @@ conda activate multigs_p
 # Update the full path
 export PYTHONPATH=<path>/multiGS_P:$PYTHONPATH
 ```
-## Configuration
+# Configuration
 
 All pipeline settings are defined in a single `.ini` configuration file. 
 
-Here is a complete sample configuration file. 
+A complete sample configuration file is provided. Only a few sections may need to be modified—see the user guide for details.
 
 ### Example
 
@@ -199,7 +228,48 @@ meta_model = linear
 meta_alpha = 1.0
 
 ```
-## Usage
+
+# Input Files
+## Genotype Data
+- VCF format: Standard Variant Call Format with biallelic SNPs
+- VCF file can be gziped (*.gz) 
+- VCF file must have standard header lines, containing at least one header line, such as
+```ini
+##fileformat=VCFv4.2
+```
+## Phenotype Data
+- CSV file or tab-delimited text file with samples as rows and traits as columns
+- Support multiple traits
+- First column should contain sample IDs
+- Missing values are automatically imputed with trait medians
+
+# Advanced Configuration
+## PCA Configuration
+```ini
+[Data]
+pca_variance_explained = 0.95  # Auto-select components to explain 95% variance
+pca_fit_scope = train  # or 'combined' for train+test
+```
+
+## Normalization Options
+```ini
+[Data]
+pheno_normalization = standard  # standard, minmax, robust, or none
+genotype_normalization = standard
+```
+## Across-population prediction
+You need to set additional data file for **across-population prediction"
+```ini
+[Data]
+test_vcf_path = new_samples.vcf
+test_phenotype_path = new_phenotypes.csv  # Optional for evaluation
+```
+
+## Model-specific Hyperparameters
+Each model supports extensive hyperparameter tuning through the configuration file.
+
+
+# Usage
 
 Once the configuration file (`config.ini`) is prepared, the pipeline can be executed directly as a Python module.
 
@@ -209,17 +279,26 @@ Once the configuration file (`config.ini`) is prepared, the pipeline can be exec
 python MultiGS-P_1.0.pyc --config config.ini
 ```
 
-## Citation
+# Troubleshooting
+## Common Issues
+1.	**VCF file errors:** Ensure VCF follows standard format with proper headers
+2.	**External tool errors:** Verify RTM-GWAS SNPLDB installation and path configuration
+3.	**Convergence warnings:** Adjust hyperparameters or normalization methods
+
+# Logging
+Detailed logs are saved in the results directory for debugging.
+
+# Citation
 
 If you use **MultiGS-P** in your research, please cite it as follows:
 > *You FM, Zheng C, Zagariah Daniel JJ, Li P, Jackle K,  House M, Tar’an T, Cloutier S. Genomic selection for seed yield prediction achieved through versatile pipelines for breeding efficiency in Flax. (In preparation).*  
 
-## Tutorials
+# Tutorials
 
 Comprehensive instructions for configuration, data preparation, model training, and execution are provided in the **MultiGS-P User Guide (PDF)**.
 
 The guide will be available in the repository’s `docs/` directory.
 
-## License
+# License
 
 This project is licensed under the terms of the **MIT License**.
