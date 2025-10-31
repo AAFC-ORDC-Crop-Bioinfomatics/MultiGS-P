@@ -12,6 +12,7 @@
 - [Input Files](#input-files)
 - [Advanced Configuration](#advanced-configuration)
 - [Usage](#usage)
+- [Output](#output)
 - [Troubleshooting](#troubleshooting)
 - [Logging](#logging)
 - [Citation](#citation)
@@ -283,6 +284,29 @@ You need to first activate the Conda environment (multigs_p, previously created 
 ```bash
 conda activate multigs_p
 python MultiGS-P_1.0.pyc --config config.ini
+```
+# Output 
+The pipeline generates a well-organized directory structure:
+```bash
+Results_folder/
+├── phenotype_analysis/
+│   ├── phenotype_stats_train.csv
+│   ├── phenotype_histograms_train.png
+│   └── phenotype_corr_heatmap_train.png
+├── scatter_plots/
+│   ├── true_vs_pred_trait_model.png
+│   └── true_vs_pred_ALL_trait.png
+├── trait_predictions/
+│   ├── prediction_view_model.csv
+│   └── predictions_view_trait_trait.csv
+├── anova/
+│   ├── anova_table.csv
+│   ├── group_means.csv
+│   └── tukey_*.csv
+├── cv_boxplot_r_by_model.png
+├── cv_grouped_boxplot_r.png
+├── mds_grm_scatter_plot.png
+└── *.log
 ```
 
 # Troubleshooting
